@@ -20,7 +20,5 @@ public class LeapOrNot {
 				System.out.println("Not the recent year");
 			}
 		}
-
 	}
-
 }
