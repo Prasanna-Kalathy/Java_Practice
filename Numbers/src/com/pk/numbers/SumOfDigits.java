@@ -2,17 +2,18 @@ package com.pk.numbers;
 
 import java.util.Scanner;
 
-public class DigitExtractor {
+public class SumOfDigits {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 		System.out.println("Enter the Number");
-		int digit,num = In.nextInt();
+		
+		int sum = 0,num = In.nextInt();
 		
 		while(num!=0) {
-			digit=num%10;
-			System.out.print(digit+" ");
+			sum=sum+(num%10);
 			num/=10;
 		}
+		System.out.println("Sum of All digits of is "+sum);
 	}
 }
