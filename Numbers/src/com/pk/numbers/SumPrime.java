@@ -8,14 +8,15 @@ public class SumPrime {
 		Scanner In = new Scanner(System.in);
 		System.out.println("Enter the Number");
 		
-		int sum=0,num=In.nextInt();
+		int digit,sum=0,num=In.nextInt();
 		
 		while(num!=0) {
-			sum+=num%10;
-			if((sum%2)==0) {
-				
+			digit=num%10;
+			if(digit==2 || digit==3 || digit==5 || digit==7) {
+				sum+=digit;
 			}
+			num/=10;
 		}
+		System.out.println(sum);
 	}
-
 }
