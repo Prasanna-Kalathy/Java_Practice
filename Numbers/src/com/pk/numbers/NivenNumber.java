@@ -7,11 +7,10 @@ public class NivenNumber {
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 		System.out.println("Enter the Number");
-		int sum = 0, dig, num = In.nextInt();
+		int sum = 0,num = In.nextInt();
 		int temp = num;
 		while (num != 0) {
-			dig = num % 10;
-			sum += dig;
+			sum += num % 10;
 			num /= 10;
 		}
 		if (temp % sum == 0) {
@@ -19,6 +18,7 @@ public class NivenNumber {
 		} else {
 			System.out.println(temp + " is Not a Niven Number");
 		}
+		In.close();
 	}
 
 }
